@@ -1,8 +1,28 @@
 @charset "UTF-8";
 
-body {
-    background-color: rgb(154, 207, 243);
-    color: white;
-    
+h1 , p {
+    text-align: center;
 }
 
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+ 
+.container img {
+    width: 500px;
+    border-radius: 100%;
+}
+
+main {
+   background: rgb(75, 175, 233); 
+   width: 500px;
+   padding: 20px;
+   border-radius: 6px;
+}
+
+main > h2 {
+    font-size: 20px;
+}
