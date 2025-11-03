@@ -8,35 +8,33 @@
 </head>
 <body>
     <h1>Guia do HTML</h1>
-    <p>De seus primeiros passos com HTMLeCSS</p>
+    <p class="paragrafo">De seus primeiros passos com HTMLeCSS</p>
     
     <div class="container">
         <img src="imagens/htmlimg.jpg" alt="img.html">
 
         <main>
-            <h1>Faça o dowload grátis aqui.</h1>
+            <h1 class="formulario">Faça o dowload grátis aqui.</h1>
             <h2>Preencha o formulário abaixo para acessar o ebook</h2>
 
-            <form action="cadastro.php" autocomplete="on"></form>
+            <form action="cadastro.php" method="post" autocomplete="on"></form>
             <label for="inome">Nome</label>
-            <br><input type="text" name="Nome" id="inome">
+            <br><input class="agora" type="text" name="Nome" id="inome" required minlength="3" maxlength="20" size="15" placeholder="nome" autocomplete="username">
             <br><label for="iemail">Email</label>
-            <br><input type="text" name="Email" id="inome">
-            <br><label for="iobjetivo">Qual seu objetivo</label>
-            <br><input type="text" name="Qual seu objetivo" id="iobjetivo">
+            <br><input class="agora" type="text" name="Email" id="iemail"  required>
 
-            <p>Você possui interesse em aprender HTMLeCSS?</p>
+            <p class="formulario">Você possui interesse em aprender HTMLeCSS?</p>
 
-            <form>
+            <form action="cadastro.php" method="post" autocomplete="on"></form>
             <label>
-                <input type="radio" name="resposta" value="sim">
+                <input type="radio" name="resposta" value="sim" required>
                 Sim
             </label>
             <br><label>
                 <input type="radio" name="resposta" value="nao">
                 Não
             </label>
-            <br><input type="submit" value="Aprender HTML e CSS agora!">
+            <br><input class="agora" type="submit" value="Aprender HTML e CSS agora!">
             </form>
         </main>
     </div>
