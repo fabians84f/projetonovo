@@ -49,4 +49,9 @@ main > h2 {
     font-size: 21px;
 }
 
+@media (min-width: 800px)
+{
+
+}
+
 
