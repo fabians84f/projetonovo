@@ -1,57 +1,10 @@
 @charset "UTF-8";
 
 body {
-    background-color: rgba(120, 167, 238, 0.904);
+    font-size: 70%;
 }
-
-h1 , p {
-    text-align: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+img {
+    width: 360px;
+    border-radius: 50%;
 }
-
-.paragrafo {
-    font-size: 20px;
-}
-
-.container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 30px;
-}
- 
-.container img {
-    width: 550px;
-    border-radius: 200%;
-}
-
-main {
-   background: rgba(44, 120, 235, 0.562); 
-   width: 500px;
-   height: 360px;
-   padding: 10px;
-   border-radius: 10px;
-   text-align: center;
-   font-size: 17px;
-}
-
-main > h2 {
-    font-size: 20px;
-}
-
-.formulario {
-    color: rgb(10, 10, 10);
-    font-family:sans-serif;
-}
-
-.agora {
-    font-size: 21px;
-}
-
-@media (min-width: 800px)
-{
-
-}
-
 

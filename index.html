@@ -12,16 +12,26 @@
     
     <div class="container">
         <img src="imagens/htmlimg.jpg" alt="img.html">
+    </div>
 
         <main>
             <h1 class="formulario">Faça o dowload grátis aqui.</h1>
             <h2>Preencha o formulário abaixo para acessar o ebook</h2>
 
             <form action="cadastro.php" method="post" autocomplete="on">
-            <label for="inome">Nome</label>
-            <br><input class="agora" type="text" name="Nome" id="inome" required minlength="3" maxlength="20"  placeholder="Nome" autocomplete="username">
-            <br><label for="iemail">Email</label>
-            <br><input class="agora" type="text" name="Email" id="iemail" required placeholder="Email" autocomplete="email">
+
+            <p>
+                <label for="inome">Nome:</label>
+                <input class="agora" type="text" name="Nome" id="inome" required minlength="3" maxlength="20"  placeholder="Nome" autocomplete="username">
+            </p>
+
+            <p>
+                <br><label for="iemail">Email:</label>
+                <input class="agora" type="text" name="Email" id="iemail" required placeholder="Email" autocomplete="email">
+            </p>
+
+            <br><label for="isenha">Senha:</label> 
+            <input type="password" name="Senha" id="isenha" required placeholder="Senha">
 
             <p class="formulario">Você possui interesse em aprender HTMLeCSS?</p>
 
@@ -29,13 +39,14 @@
                 <input type="radio" name="resposta" value="sim" required>
                 Sim
             </label>
+
             <br><label>
                 <input type="radio" name="resposta" value="nao">
                 Não
             </label>
+
             <br><input class="agora" type="submit" value="Aprender HTML e CSS agora!">
             </form>
         </main>
-    </div>
 </body>
 </html>
