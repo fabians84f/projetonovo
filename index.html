@@ -10,25 +10,22 @@
     <h1>Guia do HTML</h1>
     <p class="paragrafo">De seus primeiros passos com HTMLeCSS</p>
     
-    <div class="container">
+    <div>
         <img src="imagens/htmlimg.jpg" alt="img.html">
     </div>
-
-        <main>
+           <main class="container">
+            <form action="cadastro.php" method="post" autocomplete="on">
             <h1 class="formulario">Faça o dowload grátis aqui.</h1>
             <h2>Preencha o formulário abaixo para acessar o ebook</h2>
 
-            <form action="cadastro.php" method="post" autocomplete="on">
-
-            <p>
                 <label for="inome">Nome:</label>
                 <input class="agora" type="text" name="Nome" id="inome" required minlength="3" maxlength="20"  placeholder="Nome" autocomplete="username">
-            </p>
+            
 
-            <p>
+            
                 <br><label for="iemail">Email:</label>
                 <input class="agora" type="text" name="Email" id="iemail" required placeholder="Email" autocomplete="email">
-            </p>
+            
 
             <br><label for="isenha">Senha:</label> 
             <input type="password" name="Senha" id="isenha" required placeholder="Senha">
@@ -47,6 +44,6 @@
 
             <br><input class="agora" type="submit" value="Aprender HTML e CSS agora!">
             </form>
-        </main>
+            </main>
 </body>
 </html>
