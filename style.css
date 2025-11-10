@@ -25,27 +25,42 @@ body {
     padding: 20px;
 }
 
+div, h1, p {
+    padding: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
  img {
-    width: 300px;                   /* ajuste o tamanho da imagem aqui */
-    height:auto;
+    width: 750px;                   /* ajuste o tamanho da imagem aqui */
+    height: auto;
     border-radius: 50%;
+    padding: 60px;
 }
 
 form {
+    overflow:auto;
     background: white;
     padding: 25px;
+    height: 500px;
     width: 380px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-form h1, form h2 {
-    margin-bottom: 10px;
+form h1 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    p {
+    font-size: 14px;
+    padding:10px;
 }
 
 label {
     display: block;
-    margin-top: 12px;
+    margin-top: 9px;
     font-weight: bold;
 }
 
@@ -79,21 +94,9 @@ input[type="submit"]:hover {
     background-color: #2a59b3;
 }
 
-/* 📱 Responsivo para celular */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;     /* imagem fica em cima e formulário abaixo */
-        text-align: center;
-    }
-    
-    form {
-        width: 90%;
-    }
+@media screen (max){
+     
 
-    .container img {
-        width: 90%;
-        max-width: 350px;
     }
-}
 
 

@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="screen">
     <title>HTMLeCSS</title>
 </head>
 <body>
+    <div>
     <h1>Guia do HTML</h1>
     <p class="paragrafo">De seus primeiros passos com HTMLeCSS</p>
-    
-    <div>
         <img src="imagens/htmlimg.jpg" alt="img.html">
     </div>
            <main class="container">
             <form action="cadastro.php" method="post" autocomplete="on">
             <h1 class="formulario">Faça o dowload grátis aqui.</h1>
-            <h2>Preencha o formulário abaixo para acessar o ebook</h2>
 
                 <label for="inome">Nome:</label>
                 <input class="agora" type="text" name="Nome" id="inome" required minlength="3" maxlength="20"  placeholder="Nome" autocomplete="username">
@@ -30,14 +28,14 @@
             <br><label for="isenha">Senha:</label> 
             <input type="password" name="Senha" id="isenha" required placeholder="Senha">
 
-            <p class="formulario">Você possui interesse em aprender HTMLeCSS?</p>
+            <p>Você possui interesse em aprender HTMLeCSS?</p>
 
             <label>
                 <input type="radio" name="resposta" value="sim" required>
                 Sim
             </label>
 
-            <br><label>
+            <label>
                 <input type="radio" name="resposta" value="nao">
                 Não
             </label>
