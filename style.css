@@ -94,9 +94,78 @@ input[type="submit"]:hover {
     background-color: #2a59b3;
 }
 
-@media screen (max){
-     
+/* -------------------------- */
+/*       RESPONSIVIDADE       */
+/* -------------------------- */
 
+/* 📱 CELULAR (até 600px) */
+@media (max-width: 768px) {
+
+    body {
+        align-items: flex-start;
     }
+
+    .container {
+        flex-direction: column;    /* imagem sobe, form desce */
+        gap: 20px;
+    }
+
+    img {
+        width: 260px;              /* diminui bem no celular */
+        padding: 0;
+        border-radius: 50%;
+    }
+
+    form {
+        width: 100%;
+        height: auto;
+    }
+
+    div h1 {
+        font-size: 22px;
+    }
+
+    p.paragrafo {
+        font-size: 14px;
+    }
+}
+
+
+/* 📲 TABLET (601px até 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .container {
+        flex-direction: column;    /* pode ficar em coluna para caber melhor */
+        gap: 30px;
+    }
+
+    img {
+        width: 400px;
+        padding: 20px;
+    }
+
+    form {
+        width: 80%;
+        height: auto;
+    }
+}
+
+
+/* 🖥️ DESKTOP GRANDE (a partir de 901px) */
+@media (min-width: 901px) {
+
+    .container {
+        flex-direction: row;       /* imagem e form lado a lado */
+    }
+
+    img {
+        width: 550px;              /* reduz do seu original para caber melhor */
+        padding: 40px;
+    }
+
+    form {
+        height: auto;
+    }
+}
 
 
