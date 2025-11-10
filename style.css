@@ -39,7 +39,6 @@ div, h1, p {
 }
 
 form {
-    overflow:auto;
     background: white;
     padding: 25px;
     height: 500px;
@@ -102,31 +101,32 @@ input[type="submit"]:hover {
 @media (max-width: 768px) {
 
     body {
-        align-items: flex-start;
+        display: inline-block;
+        
     }
 
     .container {
-        flex-direction: column;    /* imagem sobe, form desce */
-        gap: 20px;
+        flex-direction:column;    /* imagem sobe, form desce */
+        gap: 3px;
     }
 
     img {
-        width: 260px;              /* diminui bem no celular */
+        width: 210px;              /* diminui bem no celular */
         padding: 0;
         border-radius: 50%;
     }
 
     form {
         width: 100%;
-        height: auto;
+        height:min-content;
     }
 
     div h1 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     p.paragrafo {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
